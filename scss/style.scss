@@ -9,6 +9,14 @@ body {
   .header {
     padding: 10px;
 
+    .containerr {
+      width: 85%;
+      margin: auto;
+    }
+
+    .list-courses {
+      display: none;
+    }
     .navbar {
       padding: 0px;
 
@@ -54,7 +62,7 @@ body {
 
     .info-banner {
       padding: 50px;
-      margin-left: 50px;
+      padding-left: 7%;
 
       p:nth-child(1) {
         margin-top: 140px;
@@ -67,7 +75,7 @@ body {
       p:nth-child(2) {
         font-size: 50px;
         font-family: utm;
-        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-width: 2px;
         font-weight: bold;
         margin-top: -30px;
         color: $other-courses;
@@ -114,6 +122,7 @@ body {
       font-weight: 700;
       font-size: 14px;
       font-family: utm;
+      height: 100;
     }
 
     .other-courses {
@@ -188,7 +197,7 @@ body {
       border-bottom-left-radius: 15px;
       box-shadow: 1px 1px 5px $shadow-hapo;
       background-color: $color-button;
-      height: 250px;
+      height: 240px;
     }
   }
 
@@ -398,11 +407,14 @@ body {
     }
 
     .div-statistic {
-      margin-top: 30px;
-      width: 90%;
+      margin: auto;
+      width: 98%;
+      margin-top: 50px;
 
       .card-statistic {
         border: none;
+        width: 33.33%;
+        margin: auto;
       }
 
       p:nth-child(1) {
@@ -435,15 +447,14 @@ body {
 
     .footer-image {
       width: 38%;
-
       img {
         width: 290px;
-        margin-left: 80px;
+        margin-left: 10%;
       }
 
       p {
         font-size: 20px;
-        margin-left: 150px;
+        margin-left: 25%;
         font-family: utm;
       }
     }
@@ -455,6 +466,7 @@ body {
         font-size: 20px;
         font-family: utm;
         font-weight: 700;
+        margin-left: 20%;
       }
 
       p:hover {
@@ -467,7 +479,7 @@ body {
 
       p {
         font-size: 20px;
-        margin-left: 20px;
+        margin-left: 12%;
         font-family: utm;
         font-weight: 700;
       }
@@ -481,7 +493,7 @@ body {
       width: 37%;
 
       .icon-footer {
-        margin-left: 90px;
+        margin-left: 40%;
       }
 
       img {
@@ -959,23 +971,20 @@ body {
     }
 
     .info-why {
-      width: 60%;
-      margin-left: -48px;
       margin-top: 230px;
+
+      width: 60%;
     }
     li {
-      float: left;
-      margin-left: -100px;
+      margin-left: -50px;
     }
 
     .laptop-phone {
-      width: 30%;
       margin-top: 110px;
-      margin-left: -18px;
     }
     .laptop-phone img {
-      width: 385px;
-      margin-top: 100px;
+      width: 350px;
+      margin-top: 125px;
     }
 
     p {
@@ -1052,11 +1061,8 @@ body {
     }
 
     .div-statistic {
-      width: 170%;
-
+      width: 97%;
       .card-statistic {
-        width: 33%;
-
         p:nth-child(1) {
           font-size: 40px;
         }
@@ -1106,7 +1112,7 @@ body {
 
       .icon-footer {
         width: 200px;
-        margin-left: -20px;
+        margin-left: -40px;
       }
 
       img {
@@ -1154,6 +1160,10 @@ body {
       .active:hover {
         color: $color-blue;
       }
+    }
+
+    .list-courses {
+      display: block;
     }
 
     .close {
@@ -1237,8 +1247,8 @@ body {
     }
     .list-whyhapo {
       margin-top: 40px;
-      margin-left: 75px;
-      width: 150%;
+      margin-left: 15px;
+      width: 390px;
       height: 400px;
     }
 
@@ -1253,7 +1263,7 @@ body {
 
     .laptop-phone img {
       width: 316px;
-      margin-left: -140px;
+      margin-left: -200px;
       margin-top: 330px;
     }
   }
@@ -1261,7 +1271,7 @@ body {
   .why-hapo p {
     line-height: 40px;
     font-size: 40px;
-    margin: -70px 0px 0px 220px;
+    margin: -70px 0px 0px 150px;
     width: 50%;
   }
 
@@ -1377,10 +1387,11 @@ body {
     }
 
     .div-statistic {
-      width: 100%;
+      width: 87%;
 
       .card-statistic {
-        width: 100%;
+        margin-left: 15px;
+        width: 94%;
       }
     }
   }
@@ -1391,13 +1402,13 @@ body {
 
       img {
         width: 170px;
-        margin-left: 0;
+        margin-left: -20px;
         margin-top: 20px;
       }
 
       p {
         font-size: 14px;
-        margin: 0;
+        margin-left: -12px;
       }
     }
 
@@ -1406,6 +1417,7 @@ body {
 
       p {
         font-size: 17px;
+        margin-left: -10px;
       }
     }
 
@@ -1423,6 +1435,7 @@ body {
 
       .icon-footer {
         width: 130px;
+        margin-left: -3px;
       }
 
       img {
