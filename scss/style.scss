@@ -179,6 +179,7 @@ body {
         height: 37px;
         font-family: utm;
         font-weight: 700;
+        height: 40px;
       }
     }
 
@@ -265,6 +266,8 @@ body {
       font-size: 25px;
       margin-top: 20px;
       font-family: utm;
+      width: 52%;
+      margin: auto;
     }
   }
 
@@ -406,7 +409,7 @@ body {
         font-family: utm;
         color: $footer-bg;
         font-family: 700;
-        text-shadow: 1px 1px $footer-bg;
+        -webkit-text-stroke-width: 2px;
       }
 
       p:nth-child(2) {
@@ -513,6 +516,7 @@ body {
 
     a {
       text-decoration: none;
+      color: $login-mess;
     }
 
     .hide {
@@ -995,7 +999,7 @@ body {
     .feedback-info {
       font-size: 18px;
       margin-top: 20px;
-      width: 100%;
+      width: 67%;
     }
   }
 
@@ -1267,6 +1271,7 @@ body {
 
     .feedback-info {
       font-size: 14px;
+      width: 280px;
     }
   }
 

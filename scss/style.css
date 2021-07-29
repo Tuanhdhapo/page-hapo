@@ -135,7 +135,8 @@ body {
       text-overflow: ellipsis;
       height: 37px;
       font-family: utm;
-      font-weight: 700; }
+      font-weight: 700;
+      height: 40px; }
     .tutorial-hapo .card-body {
       border-bottom-right-radius: 15px;
       border-bottom-left-radius: 15px;
@@ -194,7 +195,9 @@ body {
     .feedback .feedback-info {
       font-size: 25px;
       margin-top: 20px;
-      font-family: utm; }
+      font-family: utm;
+      width: 52%;
+      margin: auto; }
 
   .feelback-card {
     margin-top: 50px;
@@ -302,7 +305,7 @@ body {
         font-family: utm;
         color: #505353;
         font-family: 700;
-        text-shadow: 1px 1px #505353; }
+        -webkit-text-stroke-width: 2px; }
       .statistic .div-statistic p:nth-child(2) {
         font-size: 60px;
         font-weight: 700;
@@ -370,7 +373,8 @@ body {
     left: 92%;
     position: fixed; }
     .mess-facebook a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #b2b2b2; }
     .mess-facebook .hide {
       display: none;
       width: 360px;
@@ -690,7 +694,7 @@ body {
     .feedback .feedback-info {
       font-size: 18px;
       margin-top: 20px;
-      width: 100%; }
+      width: 67%; }
 
   .user {
     margin-top: 20px; }
@@ -859,7 +863,8 @@ body {
       font-size: 40px;
       width: 180px; }
     .feedback .feedback-info {
-      font-size: 14px; }
+      font-size: 14px;
+      width: 280px; }
 
   .feelback-card {
     margin-top: 10px;
