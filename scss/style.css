@@ -4,9 +4,18 @@
 @font-face {
   src: url(../assets/fonts/OpenSans-Bold.ttf);
   font-family: san; }
+body {
+  padding: 0px;
+  margin: 0px; }
+
 @media only screen and (max-width: 1950px) {
   .header {
     padding: 10px; }
+    .header .containerr {
+      width: 85%;
+      margin: auto; }
+    .header .list-courses {
+      display: none; }
     .header .navbar {
       padding: 0px; }
       .header .navbar img {
@@ -38,22 +47,22 @@
     background-size: 100% 655px;
     margin-top: -30px; }
     .banner .info-banner {
-      padding: 50px; }
+      padding: 50px;
+      padding-left: 7%; }
       .banner .info-banner p:nth-child(1) {
         margin-top: 140px;
-        font-size: 43px;
+        font-size: 50px;
         font-family: utm;
         text-shadow: 5px;
-        color: #11114e;
-        font-weight: 700; }
-      .banner .info-banner p:nth-child(2) {
-        font-size: 43px;
-        font-weight: 700;
-        font-family: utm;
-        text-shadow: 2px 2px #11114e;
-        -webkit-text-stroke-width: 2px;
-        margin-top: -30px;
         color: #11114e; }
+      .banner .info-banner p:nth-child(2) {
+        font-size: 50px;
+        font-family: utm;
+        -webkit-text-stroke-width: 2px;
+        font-weight: bold;
+        margin-top: -30px;
+        color: #11114e;
+        line-height: 60px; }
       .banner .info-banner img {
         width: 45px; }
       .banner .info-banner p:nth-child(3) {
@@ -66,7 +75,7 @@
         border: 0;
         background-color: #b2d235;
         border-radius: 35px;
-        width: 400px;
+        width: 350px;
         box-shadow: 0px -2px 4px 0px #888888;
         margin-bottom: 100px;
         color: white;
@@ -83,7 +92,8 @@
     .tutorial-hapo .text-title {
       font-weight: 700;
       font-size: 14px;
-      font-family: utm; }
+      font-family: utm;
+      height: 100; }
     .tutorial-hapo .other-courses {
       margin-top: 100px; }
       .tutorial-hapo .other-courses .courses {
@@ -131,12 +141,14 @@
       text-overflow: ellipsis;
       height: 37px;
       font-family: utm;
-      font-weight: 700; }
+      font-weight: 700;
+      height: 40px; }
     .tutorial-hapo .card-body {
       border-bottom-right-radius: 15px;
       border-bottom-left-radius: 15px;
       box-shadow: 1px 1px 5px #888888;
-      background-color: white; }
+      background-color: white;
+      height: 240px; }
 
   .why-hapo {
     background-image: url("../assets/img/bg.PNG");
@@ -168,7 +180,7 @@
         float: right; }
       .why-hapo .list-whyhapo span {
         font-size: 20px;
-        font-family: stm;
+        font-family: utm;
         font-weight: normal;
         letter-spacing: 1px;
         line-height: 50px; }
@@ -190,7 +202,9 @@
     .feedback .feedback-info {
       font-size: 25px;
       margin-top: 20px;
-      font-family: utm; }
+      font-family: utm;
+      width: 52%;
+      margin: auto; }
 
   .feelback-card {
     margin-top: 50px;
@@ -200,7 +214,7 @@
       width: 95%;
       border-radius: 10px;
       padding: 25px;
-      box-shadow: 0px 0px 2px 2px #d9dadc;
+      box-shadow: 0px 0px 10px #d9dadc;
       font-size: 16px;
       font-family: utm; }
     .feelback-card .feelback-border {
@@ -226,7 +240,7 @@
     .feelback-card .user-info .star {
       font-size: 14px;
       margin-top: -16px;
-      color: yellow; }
+      color: #f2c54f; }
 
   .prev {
     width: 22px;
@@ -235,7 +249,7 @@
     top: 30%;
     left: 0.1%;
     background-color: white;
-    border: 2px solid #888888;
+    border: 0.5px solid #c4c4c4;
     text-align: center;
     z-index: 1;
     color: #969494; }
@@ -247,7 +261,7 @@
     position: absolute;
     top: 30%;
     right: 0.1%;
-    border: 2px solid #888888;
+    border: 0.5px solid #c4c4c4;
     text-align: center;
     color: #969494; }
 
@@ -289,16 +303,19 @@
       text-shadow: 1px 1px #11114e;
       font-weight: 700; }
     .statistic .div-statistic {
-      margin-top: 30px;
-      width: 67%; }
+      margin: auto;
+      width: 98%;
+      margin-top: 50px; }
       .statistic .div-statistic .card-statistic {
-        border: none; }
+        border: none;
+        width: 33.33%;
+        margin: auto; }
       .statistic .div-statistic p:nth-child(1) {
         font-size: 60px;
         font-family: utm;
         color: #505353;
         font-family: 700;
-        text-shadow: 1px 1px #505353; }
+        -webkit-text-stroke-width: 2px; }
       .statistic .div-statistic p:nth-child(2) {
         font-size: 60px;
         font-weight: 700;
@@ -310,28 +327,32 @@
     background-color: #505353;
     margin-top: 100px;
     color: white; }
+    .footer a {
+      text-decoration: none;
+      color: white; }
     .footer .footer-image {
       width: 38%; }
       .footer .footer-image img {
         width: 290px;
-        margin-left: 80px; }
+        margin-left: 10%; }
       .footer .footer-image p {
         font-size: 20px;
-        margin-left: 150px;
+        margin-left: 25%;
         font-family: utm; }
     .footer .home {
       width: 12%; }
       .footer .home p {
         font-size: 20px;
         font-family: utm;
-        font-weight: 700; }
+        font-weight: 700;
+        margin-left: 20%; }
       .footer .home p:hover {
         color: #ffaaff; }
     .footer .contact {
       width: 13%; }
       .footer .contact p {
         font-size: 20px;
-        margin-left: 20px;
+        margin-left: 12%;
         font-family: utm;
         font-weight: 700; }
       .footer .contact p:hover {
@@ -339,10 +360,10 @@
     .footer .footer-icon {
       width: 37%; }
       .footer .footer-icon .icon-footer {
-        margin-left: 40px; }
+        margin-left: 40%; }
       .footer .footer-icon img {
         margin-top: 80px;
-        margin-left: 30px; }
+        margin-left: 20px; }
       .footer .footer-icon img:hover {
         width: 70px; }
 
@@ -353,9 +374,8 @@
       text-align: center;
       font-size: 15px;
       padding: 5px;
-      font-family: utm; }
-    .footer-end p:hover {
-      color: #ffaaff; }
+      font-family: utm;
+      margin: 0px; }
 
   .mess-facebook {
     border: 0;
@@ -364,7 +384,8 @@
     left: 92%;
     position: fixed; }
     .mess-facebook a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #b2b2b2; }
     .mess-facebook .hide {
       display: none;
       width: 360px;
@@ -479,8 +500,6 @@
     font-size: 25px;
     font-weight: 700;
     font-family: utm; }
-  .tabs .login p:hover {
-    background-color: blue; }
   .tabs .img-fb {
     width: 12px; }
   .tabs .register p {
@@ -488,8 +507,6 @@
     font-size: 25px;
     font-weight: 700;
     font-family: utm; }
-  .tabs .register p:hover {
-    background-color: blue; }
   .tabs .tabs-container {
     width: 90%; }
     .tabs .tabs-container span {
@@ -527,6 +544,7 @@
     .tabs .tabs-container .forgot:hover {
       color: blue; }
     .tabs .tabs-container .login-hapo {
+      margin-left: -30px;
       width: 200px;
       background-color: #b2d235;
       border-radius: 22px;
@@ -537,6 +555,8 @@
       font-family: utm;
       padding: 8px;
       box-shadow: 1px -2px 1px 1px #b2b2b2; }
+    .tabs .tabs-container .login-registers {
+      margin-left: 0px; }
     .tabs .tabs-container .login-hapo:hover {
       background-color: blue; }
     .tabs .tabs-container .login-with {
@@ -550,9 +570,10 @@
     .tabs .tabs-container .line-login {
       border-bottom: 1px solid #dbdbdb;
       text-align: center;
-      width: 100%;
       line-height: 0.1em;
-      margin-top: 30px; }
+      margin-top: 30px;
+      width: 429px;
+      margin-left: -33px; }
     .tabs .tabs-container .facebook {
       width: 100%;
       margin-top: 40px;
@@ -573,6 +594,11 @@
     background-color: #b2d235;
     color: white; } }
 @media only screen and (max-width: 995px) {
+  .header .btn-menu {
+    box-shadow: none !important;
+    border: none; }
+  .header .navbar-toggler-icon {
+    width: 25px; }
   .header .navbar {
     display: block; }
     .header .navbar img {
@@ -583,6 +609,8 @@
   .header .navbar-nav {
     margin: auto;
     margin-top: -30px; }
+    .header .navbar-nav a {
+      color: red; }
     .header .navbar-nav li {
       margin-left: 10px;
       font-weight: 700; }
@@ -592,7 +620,7 @@
     .banner .info-banner {
       padding: 50px;
       margin-top: -20px;
-      margin-left: -25px; }
+      margin-left: -5px; }
       .banner .info-banner p:nth-child(1) {
         margin-top: 15px;
         font-size: 27px; }
@@ -649,18 +677,15 @@
       width: 277px;
       margin-top: -180px; }
     .why-hapo .info-why {
-      width: 60%;
-      margin-left: -60px;
-      margin-top: 230px; }
+      margin-top: 230px;
+      width: 60%; }
     .why-hapo li {
-      float: left;
-      margin-left: -100px; }
+      margin-left: -50px; }
     .why-hapo .laptop-phone {
-      width: 30%;
       margin-top: 110px; }
     .why-hapo .laptop-phone img {
-      width: 385px;
-      margin-top: 100px; }
+      width: 350px;
+      margin-top: 125px; }
     .why-hapo p {
       font-size: 50px;
       display: block;
@@ -683,7 +708,7 @@
     .feedback .feedback-info {
       font-size: 18px;
       margin-top: 20px;
-      width: 100%; }
+      width: 67%; }
 
   .user {
     margin-top: 20px; }
@@ -707,13 +732,11 @@
     font-size: 50px;
     width: 180px; }
   .statistic .div-statistic {
-    width: 100%; }
-    .statistic .div-statistic .card-statistic {
-      width: 33%; }
-      .statistic .div-statistic .card-statistic p:nth-child(1) {
-        font-size: 40px; }
-      .statistic .div-statistic .card-statistic p:nth-child(2) {
-        font-size: 40px; }
+    width: 97%; }
+    .statistic .div-statistic .card-statistic p:nth-child(1) {
+      font-size: 40px; }
+    .statistic .div-statistic .card-statistic p:nth-child(2) {
+      font-size: 40px; }
 
   .footer .footer-image {
     width: 35%; }
@@ -722,7 +745,9 @@
       margin-left: 0; }
     .footer .footer-image p {
       font-size: 16px;
-      margin: 0; }
+      margin: 0;
+      width: 200px;
+      width: 250px; }
   .footer .home {
     width: 10%; }
     .footer .home p {
@@ -736,7 +761,7 @@
     width: 30%; }
     .footer .footer-icon .icon-footer {
       width: 200px;
-      margin-left: 10px; }
+      margin-left: -40px; }
     .footer .footer-icon img {
       width: 40px;
       margin: 70px 0px 0px 20px; }
@@ -758,6 +783,17 @@
     width: 100vw;
     background-color: white;
     position: fixed; }
+    .header .navbar .active {
+      color: #b2d235 !important;
+      background-color: white; }
+    .header .navbar .navbar-nav {
+      height: 750px; }
+    .header .navbar .active:hover {
+      color: #b2d235; }
+    .header .list-courses {
+      display: block; }
+    .header .close {
+      display: none; }
     .header .navbar-brand {
       position: absolute;
       top: -5px;
@@ -808,8 +844,8 @@
       height: 570px; }
     .why-hapo .list-whyhapo {
       margin-top: 40px;
-      margin-left: 75px;
-      width: 150%;
+      margin-left: 15px;
+      width: 390px;
       height: 400px; }
     .why-hapo .laptop img {
       width: 225px;
@@ -818,13 +854,13 @@
       width: 0%; }
     .why-hapo .laptop-phone img {
       width: 316px;
-      margin-left: -140px;
+      margin-left: -200px;
       margin-top: 330px; }
 
   .why-hapo p {
     line-height: 40px;
     font-size: 40px;
-    margin: -70px 0px 0px 220px;
+    margin: -70px 0px 0px 150px;
     width: 50%; }
 
   .become-member {
@@ -848,7 +884,8 @@
       font-size: 40px;
       width: 180px; }
     .feedback .feedback-info {
-      font-size: 14px; }
+      font-size: 14px;
+      width: 280px; }
 
   .feelback-card {
     margin-top: 10px;
@@ -898,23 +935,25 @@
     font-size: 60px;
     width: 200px; }
   .statistic .div-statistic {
-    width: 100%; }
+    width: 87%; }
     .statistic .div-statistic .card-statistic {
-      width: 100%; }
+      margin-left: 15px;
+      width: 94%; }
 
   .footer .footer-image {
     width: 65%; }
     .footer .footer-image img {
       width: 170px;
-      margin-left: 0;
+      margin-left: -20px;
       margin-top: 20px; }
     .footer .footer-image p {
       font-size: 14px;
-      margin: 0; }
+      margin-left: -12px; }
   .footer .home {
     width: 50%; }
     .footer .home p {
-      font-size: 17px; }
+      font-size: 17px;
+      margin-left: -10px; }
   .footer .contact {
     width: 50%; }
     .footer .contact p {
@@ -923,7 +962,8 @@
   .footer .footer-icon {
     width: 35%; }
     .footer .footer-icon .icon-footer {
-      width: 130px; }
+      width: 130px;
+      margin-left: -3px; }
     .footer .footer-icon img {
       width: 30px;
       margin: 25px 0px 0px 5px; }
@@ -944,6 +984,10 @@
     padding: 0px;
     margin: 0px;
     width: 378px;
-    height: 630px; } }
+    height: 630px; }
+
+  .line-login {
+    width: 381px !important;
+    margin-left: -30px !important; } }
 
 /*# sourceMappingURL=style.css.map */
