@@ -141,7 +141,8 @@ body {
       border-bottom-right-radius: 15px;
       border-bottom-left-radius: 15px;
       box-shadow: 1px 1px 5px #888888;
-      background-color: white; }
+      background-color: white;
+      height: 250px; }
 
   .why-hapo {
     background-image: url("../assets/img/bg.PNG");
@@ -173,7 +174,7 @@ body {
         float: right; }
       .why-hapo .list-whyhapo span {
         font-size: 20px;
-        font-family: stm;
+        font-family: utm;
         font-weight: normal;
         letter-spacing: 1px;
         line-height: 50px; }
@@ -489,8 +490,6 @@ body {
     font-size: 25px;
     font-weight: 700;
     font-family: utm; }
-  .tabs .login p:hover {
-    background-color: blue; }
   .tabs .img-fb {
     width: 12px; }
   .tabs .register p {
@@ -498,8 +497,6 @@ body {
     font-size: 25px;
     font-weight: 700;
     font-family: utm; }
-  .tabs .register p:hover {
-    background-color: blue; }
   .tabs .tabs-container {
     width: 90%; }
     .tabs .tabs-container span {
@@ -537,6 +534,7 @@ body {
     .tabs .tabs-container .forgot:hover {
       color: blue; }
     .tabs .tabs-container .login-hapo {
+      margin-left: -30px;
       width: 200px;
       background-color: #b2d235;
       border-radius: 22px;
@@ -547,6 +545,8 @@ body {
       font-family: utm;
       padding: 8px;
       box-shadow: 1px -2px 1px 1px #b2b2b2; }
+    .tabs .tabs-container .login-registers {
+      margin-left: 0px; }
     .tabs .tabs-container .login-hapo:hover {
       background-color: blue; }
     .tabs .tabs-container .login-with {
@@ -584,6 +584,11 @@ body {
     background-color: #b2d235;
     color: white; } }
 @media only screen and (max-width: 995px) {
+  .header .btn-menu {
+    box-shadow: none !important;
+    border: none; }
+  .header .navbar-toggler-icon {
+    width: 25px; }
   .header .navbar {
     display: block; }
     .header .navbar img {
@@ -594,6 +599,8 @@ body {
   .header .navbar-nav {
     margin: auto;
     margin-top: -30px; }
+    .header .navbar-nav a {
+      color: red; }
     .header .navbar-nav li {
       margin-left: 10px;
       font-weight: 700; }
@@ -661,14 +668,15 @@ body {
       margin-top: -180px; }
     .why-hapo .info-why {
       width: 60%;
-      margin-left: -60px;
+      margin-left: -48px;
       margin-top: 230px; }
     .why-hapo li {
       float: left;
       margin-left: -100px; }
     .why-hapo .laptop-phone {
       width: 30%;
-      margin-top: 110px; }
+      margin-top: 110px;
+      margin-left: -18px; }
     .why-hapo .laptop-phone img {
       width: 385px;
       margin-top: 100px; }
@@ -771,6 +779,13 @@ body {
     width: 100vw;
     background-color: white;
     position: fixed; }
+    .header .navbar .active {
+      color: #b2d235 !important;
+      background-color: white; }
+    .header .navbar .navbar-nav {
+      height: 750px; }
+    .header .navbar .active:hover {
+      color: #b2d235; }
     .header .close {
       display: none; }
     .header .navbar-brand {
