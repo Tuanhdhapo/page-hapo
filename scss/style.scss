@@ -3,6 +3,10 @@
 body {
   padding: 0px;
   margin: 0px;
+
+  a:hover {
+    color: $buton-hover;
+  }
 }
 
 @media only screen and (max-width: 1950px) {
@@ -33,17 +37,19 @@ body {
         font-family: san;
         font-size: 14px;
         color: $footer-bg;
-        width: 125px;
+        width: 132px;
+        margin-left: 10px;
+        padding: 10px;
       }
       .active {
         background-color: $color-blue;
         color: $color-button !important;
-        border-radius: 17px;
+        border-radius: 20px;
       }
 
       .nav-link:hover {
         background-color: $color-blue;
-        border-radius: 17px;
+        border-radius: 20px;
         color: $color-button !important;
       }
     }
@@ -57,7 +63,7 @@ body {
     background-image: url("../assets/img/banner.png");
     background-repeat: no-repeat;
     background-size: 100% 655px;
-    margin-top: -30px;
+    margin-top: -25px;
 
     .info-banner {
       padding: 50px;
@@ -114,6 +120,12 @@ body {
     height: 200px;
     background-image: linear-gradient(to top, $bg-banner, $color-button);
   }
+  .container-card {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 95%;
+  }
 
   .tutorial-hapo {
     margin-top: -100px;
@@ -168,6 +180,8 @@ body {
     }
 
     .card-hapo {
+      width: 370px;
+      margin: 5px;
       img {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -498,12 +512,12 @@ body {
       width: 38%;
       img {
         width: 290px;
-        margin-left: 10%;
+        margin-left: 14%;
       }
 
       p {
         font-size: 20px;
-        margin-left: 25%;
+        margin-left: 27%;
         font-family: utm;
       }
     }
@@ -542,12 +556,12 @@ body {
       width: 37%;
 
       .icon-footer {
-        margin-left: 34%;
+        margin-left: 38%;
       }
 
       img {
         margin-top: 70px;
-        margin-left: 20px;
+        margin-left: 7%;
       }
 
       img:hover {
@@ -608,6 +622,7 @@ body {
 
     .frame-hapo {
       p {
+        margin-top: 5px;
         margin-left: 60px;
         font-weight: 600;
         font-family: san;
@@ -621,6 +636,7 @@ body {
         float: right;
         padding: 8px;
         margin-right: 10px;
+        margin-top: 5px;
       }
 
       img:hover {
@@ -631,8 +647,10 @@ body {
 
     .hello {
       margin-top: -20px;
+
       img {
-        margin-left: 5px;
+        margin-left: 11px;
+        margin-top: 10px;
       }
 
       p {
@@ -951,6 +969,7 @@ body {
   }
 
   .banner {
+    margin-top: 12px;
     background-size: 100% 350px;
     .info-banner {
       padding: 50px;
@@ -1003,7 +1022,7 @@ body {
       }
     }
     .text-title {
-      height: 120px;
+      height: 80px;
     }
     .text-title-frist {
       height: 80px;
@@ -1011,6 +1030,7 @@ body {
 
     .card-hapo {
       .card-body {
+        width: 225px;
         p:nth-child(1) {
           font-size: 20px;
           height: 27px;
@@ -1020,7 +1040,7 @@ body {
         height: 130px;
       }
       a {
-        width: 116px;
+        width: 125px;
         height: 24px;
         font-size: 10px;
         padding: 5px;
@@ -1271,10 +1291,11 @@ body {
         height: 750px;
         .nav-link {
           text-align: center;
-          margin-left: 70px;
+          margin-left: 53px;
           font-family: san;
           font-size: 16px;
           margin-top: 15px;
+          width: 150px;
         }
       }
 
@@ -1317,16 +1338,19 @@ body {
       margin-left: 25px;
 
       p:nth-child(1) {
-        font-size: 25px;
+        font-size: 24px;
         margin-top: 180px;
+        font-weight: 400;
+        line-height: 30px;
       }
 
       p:nth-child(2) {
         margin-top: -30px;
+        font-size: 24px;
       }
 
       button {
-        width: 285px;
+        width: 268px;
         padding: 10px;
         margin-bottom: 30px;
         font-size: 18px;
@@ -1337,11 +1361,18 @@ body {
   .tutorial-hapo {
     margin-top: -100px;
     .card-hapo {
-      width: 300px;
+      width: 280px;
       margin-bottom: 35px;
+
+      .card-body {
+        width: 280px;
+      }
 
       img {
         height: 165px;
+        width: 280px;
+        margin: 0px;
+        padding: 0px;
       }
 
       a {
@@ -1353,7 +1384,7 @@ body {
     }
 
     .text-title {
-      height: 90px;
+      height: 100px;
     }
 
     .text-title-frist {
@@ -1365,14 +1396,14 @@ body {
 
       .courses {
         font-size: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         width: 61%;
       }
     }
 
     .view-courses p {
       margin-top: 30px;
-      font-size: 22px;
+      font-size: 25px;
       margin-bottom: 70px;
 
       .arrow {
@@ -1631,7 +1662,7 @@ body {
   .login-register {
     padding: 0px;
     margin: 0px;
-    width: 378px;
+    width: 382px;
     height: 600px;
   }
 
