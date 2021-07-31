@@ -736,6 +736,8 @@ body {
       height: 80px; }
     .tutorial-hapo .text-title-frist {
       height: 80px; }
+    .tutorial-hapo .container-card {
+      width: 90%; }
     .tutorial-hapo .card-hapo .card-body {
       width: 225px; }
       .tutorial-hapo .card-hapo .card-body p:nth-child(1) {
@@ -902,7 +904,7 @@ body {
       height: 750px; }
       .header .navbar .navbar-nav .nav-link {
         text-align: center;
-        margin-left: 53px;
+        margin-left: 60px;
         font-family: san;
         font-size: 16px;
         margin-top: 15px;
