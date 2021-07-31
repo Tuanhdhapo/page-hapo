@@ -25,7 +25,7 @@ body {
       padding: 0px;
 
       img {
-        width: 300px;
+        width: 320px;
       }
 
       .navbar-menu-div {
@@ -40,6 +40,7 @@ body {
         width: 132px;
         margin-left: 10px;
         padding: 10px;
+        margin-top: -7px;
       }
       .active {
         background-color: $color-blue;
@@ -63,7 +64,7 @@ body {
     background-image: url("../assets/img/banner.png");
     background-repeat: no-repeat;
     background-size: 100% 655px;
-    margin-top: -25px;
+    margin-top: -28px;
 
     .info-banner {
       padding: 50px;
@@ -180,7 +181,7 @@ body {
     }
 
     .card-hapo {
-      width: 370px;
+      width: 340px;
       margin: 5px;
       img {
         border-top-left-radius: 15px;

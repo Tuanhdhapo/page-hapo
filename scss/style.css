@@ -21,7 +21,7 @@ body {
     .header .navbar {
       padding: 0px; }
       .header .navbar img {
-        width: 300px; }
+        width: 320px; }
       .header .navbar .navbar-menu-div {
         justify-content: flex-end; }
       .header .navbar .nav-link {
@@ -31,7 +31,8 @@ body {
         color: #505353;
         width: 132px;
         margin-left: 10px;
-        padding: 10px; }
+        padding: 10px;
+        margin-top: -7px; }
       .header .navbar .active {
         background-color: #b2d235;
         color: white !important;
@@ -48,7 +49,7 @@ body {
     background-image: url("../assets/img/banner.png");
     background-repeat: no-repeat;
     background-size: 100% 655px;
-    margin-top: -25px; }
+    margin-top: -28px; }
     .banner .info-banner {
       padding: 50px;
       padding-left: 7%; }
@@ -137,7 +138,7 @@ body {
     .tutorial-hapo .view-courses p:hover {
       font-size: 60px; }
     .tutorial-hapo .card-hapo {
-      width: 370px;
+      width: 340px;
       margin: 5px; }
       .tutorial-hapo .card-hapo img {
         border-top-left-radius: 15px;
