@@ -39,7 +39,8 @@
                     </div>
                     <div class="login-mess">
                         <img src="assets/img/iconmess.png">
-                        <a href=""> <span>Đăng nhập vào Messenger</span></a>
+                        <a href=""> <span style="margin-left: 2px;"> Đăng nhập
+                                vào Messenger</span></a>
                     </div>
                     <div class="chat-hapo">
                         <a href=""><p>Chat với HapoLearn trong Messenger</p></a>
@@ -100,7 +101,7 @@
                                         aria-selected="false"
                                         data-toggle="pill"
                                         role="tab"
-                                        href="#" onclick="hidenav()">List lESSON</a>
+                                        href="#" onclick="hidenav()">LIST lESSON</a>
                                 </li>
                                 <li class="nav-item item-menu list-courses">
                                     <a class="nav-link text-center"
@@ -159,20 +160,26 @@
                                 <div class="container tabs-container">
                                     <div id="tabs-login"><br>
                                         <div class="input">
-                                            <span>Username:</span><br>
+                                            <label>Username:</label><br>
                                             <input type="text"> <br>
                                         </div>
                                         <div class="input">
-                                            <span>Password:</span><br>
+                                            <label>Password:</label><br>
                                             <input type="password"><br>
                                         </div>
                                         <div class="login-check">
-                                            <input class="check-box"
-                                                type="checkbox">
-                                            <span class="rememberme"><a
-                                                    href="">&nbsp; Rememberme</a></span>
-                                            <span><a class="forgot" href="">Forgot
-                                                    password</a></span><br>
+                                            <input type="checkbox"
+                                                class="form-check-input
+                                                remember-me-login-checkbox"
+                                                id="remember-me-login-checkbox">
+                                            <label class="form-check-label
+                                                remember-me-label rememberme"
+                                                for="remember-me-login-checkbox">
+                                                Remember me</label>
+
+
+                                            <label><a class="forgot" href="">Forgot
+                                                    password</a></label><br>
                                         </div>
                                         <div>
                                             <p class="text-center">
@@ -189,8 +196,10 @@
                                             <button
                                                 type="button" class="btn
                                                 btn-primary facebook"><img
+                                                    class="img-gg"
                                                     src="assets/img/google.png"
                                                     alt="facebook"><img
+                                                    class="img-gg"
                                                     src="assets/img/vectort.png"
                                                     alt="google">
                                                 Google</button>
@@ -207,17 +216,17 @@
                                     </div>
                                     <div id="tabs-register">
                                         <br><br>
-                                        <div class="input user-input"> <span>Username:</span><br>
+                                        <div class="input user-input"> <label>Username:</label><br>
                                             <input type="text"><br>
                                         </div>
-                                        <div class="input"> <span>Email:</span><br>
+                                        <div class="input"> <label>Email:</label><br>
                                             <input type="email"><br>
                                         </div>
-                                        <div class="input"> <span>Password:</span><br>
+                                        <div class="input"> <label>Password:</label><br>
                                             <input type="password"><br>
                                         </div>
-                                        <div class="input"> <span>Repeat
-                                                Password:</span><br>
+                                        <div class="input"> <label>Repeat
+                                                Password:</label><br>
                                             <input type="password"><br>
                                         </div>
                                         <p class="text-center">
@@ -257,7 +266,7 @@
         <div class="bg-banner"></div>
 
         <div class="tutorial-hapo">
-            <div class="container">
+            <div class="container-card">
                 <div class="row">
                     <div class="col-xl-4 col-md-4 d-flex
                         justify-content-center">
@@ -332,7 +341,7 @@
             </div>
             <div class="other-courses">
                 <p class="text-center courses">Other courses</p>
-                <div class="container">
+                <div class="container-card">
                     <div class="row">
                         <div class="col-xl-4 col-md-4 d-flex
                             justify-content-center">
@@ -344,7 +353,8 @@
                                         text-center">
                                         CSS Tutorial
                                     </p>
-                                    <p class="card-text text-center text-title">
+                                    <p class="card-text text-center
+                                        text-title-frist">
                                         I knew hardly anything about HTML, JS,
                                         and CSS before
                                         entering New Media,...
@@ -368,7 +378,8 @@
                                     <p class="card-title text-center">
                                         Ruby on rails <span>Tutorial</span>
                                     </p>
-                                    <p class="card-text text-center text-title">
+                                    <p class="card-text text-center
+                                        text-title-frist">
                                         I knew hardly anything about HTML, JS,
                                         and CSS before
                                         entering New Media,...
@@ -388,7 +399,8 @@
                                 <div class="card-body">
                                     <p class="card-title text-center">Java
                                         Tutorial</p>
-                                    <p class="card-text text-center text-title">
+                                    <p class="card-text text-center
+                                        text-title-frist">
                                         I knew hardly anything about HTML, JS,
                                         and CSS before
                                         entering New Media,...
@@ -471,6 +483,7 @@
                                     a good Angular developer. Very glad to have
                                     taken this course. Thank you Eddie Bryan.”</p>
                             </div>
+                            <div class="triangle"></div>
                         </div>
                         <div class="user">
                             <div class="image-user">
@@ -499,6 +512,7 @@
                                     a good Angular developer. Very glad to have
                                     taken this course. Thank you Eddie Bryan.”</p>
                             </div>
+                            <div class="triangle"></div>
                         </div>
                         <div class="user">
                             <div class="image-user">
@@ -527,6 +541,7 @@
                                     a good Angular developer. Very glad to have
                                     taken this course. Thank you Eddie Bryan.”</p>
                             </div>
+                            <div class="triangle"></div>
                         </div>
                         <div class="user">
                             <div class="image-user">

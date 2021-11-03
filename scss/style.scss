@@ -3,11 +3,15 @@
 body {
   padding: 0px;
   margin: 0px;
+
+  a:hover {
+    color: $buton-hover;
+  }
 }
 
 @media only screen and (max-width: 1950px) {
   .header {
-    padding: 10px;
+    padding: 5px;
 
     .containerr {
       width: 85%;
@@ -21,7 +25,7 @@ body {
       padding: 0px;
 
       img {
-        width: 275px;
+        width: 320px;
       }
 
       .navbar-menu-div {
@@ -29,23 +33,27 @@ body {
       }
 
       .nav-link {
-        margin: 10px;
         font-weight: 700;
         font-family: san;
         font-size: 14px;
         color: $footer-bg;
+        width: 132px;
+        margin-left: 10px;
+        padding: 10px;
+        margin-top: -9px;
       }
       .active {
         background-color: $color-blue;
         color: $color-button !important;
-        border-radius: 17px;
+        border-radius: 20px;
+        padding: 8px;
       }
 
       .nav-link:hover {
-        padding: 8px;
         background-color: $color-blue;
-        border-radius: 17px;
+        border-radius: 20px;
         color: $color-button !important;
+        padding: 8px;
       }
     }
   }
@@ -103,6 +111,7 @@ body {
         margin-bottom: 100px;
         color: $color-button;
         font-weight: 700;
+        padding-bottom: 9px;
       }
       button:hover {
         color: $buton-hover;
@@ -114,6 +123,12 @@ body {
     height: 200px;
     background-image: linear-gradient(to top, $bg-banner, $color-button);
   }
+  .container-card {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 95%;
+  }
 
   .tutorial-hapo {
     margin-top: -100px;
@@ -122,7 +137,18 @@ body {
       font-weight: 700;
       font-size: 14px;
       font-family: utm;
-      height: 100;
+      height: 90px;
+      line-height: 20px;
+      color: #505353;
+    }
+
+    .text-title-frist {
+      height: 50px;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: utm;
+      line-height: 20px;
+      color: #505353;
     }
 
     .other-courses {
@@ -149,6 +175,7 @@ body {
       font-weight: 700;
       font-family: utm;
       text-shadow: 1px 1px $view-courses;
+      height: 60px;
     }
 
     .view-courses p:hover {
@@ -156,6 +183,8 @@ body {
     }
 
     .card-hapo {
+      width: 340px;
+      margin: 5px;
       img {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -174,6 +203,7 @@ body {
         margin-bottom: 20px;
         font-weight: 700;
         font-family: utm;
+        padding-bottom: 12px;
       }
 
       a:hover {
@@ -197,7 +227,6 @@ body {
       border-bottom-left-radius: 15px;
       box-shadow: 1px 1px 5px $shadow-hapo;
       background-color: $color-button;
-      height: 240px;
     }
   }
 
@@ -213,7 +242,8 @@ body {
     }
 
     .laptop-phone img {
-      width: 750px;
+      width: 650px;
+      margin-top: 60px;
     }
 
     .info-laptop {
@@ -261,6 +291,27 @@ body {
       margin: auto;
     }
 
+    .triangle {
+      width: 100px;
+      height: 38px;
+      position: absolute;
+      margin-top: 25px;
+      overflow: hidden;
+      margin-left: -15px;
+    }
+
+    .triangle:after {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background: #ffffff;
+      transform: rotate(45deg);
+      top: -25px;
+      left: 25px;
+      border: 0.5px solid rgba(0, 0, 0, 0.25);
+      box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5);
+    }
     .feedback-title {
       font-size: 80px;
       font-weight: 700;
@@ -278,6 +329,8 @@ body {
       font-family: utm;
       width: 52%;
       margin: auto;
+      padding-top: 25px;
+      position: relative;
     }
   }
 
@@ -296,17 +349,21 @@ body {
     }
 
     .feelback-border {
-      border-left: 4px solid $boder-slick;
-      margin-left: 10px;
+      border-left: 2px solid $boder-slick;
+      margin-left: 5px;
       padding: 10px;
     }
 
     .user {
-      margin: 40px 0px 0px 40px;
+      margin: 40px 0px 0px 60px;
       display: flex;
 
       .image-user {
         width: 80px;
+
+        img {
+          height: 70px;
+        }
       }
     }
 
@@ -334,20 +391,26 @@ body {
   }
 
   .prev {
-    width: 22px;
+    padding-top: 2px;
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
+    font-size: 19px;
     position: absolute;
     top: 30%;
     left: 0.1%;
-    background-color: $color-button;
     border: 0.5px solid #c4c4c4;
+    background-color: $color-button;
     text-align: center;
     z-index: 1;
     color: $next-color;
   }
 
   .next {
-    width: 22px;
+    padding-top: 2px;
+    width: 25px;
+    height: 25px;
+    font-size: 19px;
     border-radius: 100%;
     background-color: $color-button;
     position: absolute;
@@ -364,7 +427,7 @@ body {
     background-size: 100% 500px;
 
     .info-become {
-      padding: 100px;
+      padding: 120px;
 
       p:nth-child(1) {
         font-size: 60px;
@@ -372,6 +435,7 @@ body {
         color: $color-button;
         font-family: utm;
         text-shadow: 1px 1px $color-button;
+        line-height: 73, 56px;
       }
 
       button {
@@ -385,6 +449,8 @@ body {
         font-weight: 700;
         font-family: utm;
         padding: 10px;
+        margin-bottom: 15px;
+        padding-bottom: 14px;
       }
 
       button:hover {
@@ -449,23 +515,23 @@ body {
       width: 38%;
       img {
         width: 290px;
-        margin-left: 10%;
+        margin-left: 14%;
       }
 
       p {
         font-size: 20px;
-        margin-left: 25%;
+        margin-left: 27%;
         font-family: utm;
       }
     }
 
     .home {
       width: 12%;
+      margin-top: 15px;
 
       p {
         font-size: 20px;
         font-family: utm;
-        font-weight: 700;
         margin-left: 20%;
       }
 
@@ -476,12 +542,12 @@ body {
 
     .contact {
       width: 13%;
+      margin-top: 15px;
 
       p {
         font-size: 20px;
         margin-left: 12%;
         font-family: utm;
-        font-weight: 700;
       }
 
       p:hover {
@@ -493,12 +559,12 @@ body {
       width: 37%;
 
       .icon-footer {
-        margin-left: 40%;
+        margin-left: 38%;
       }
 
       img {
-        margin-top: 80px;
-        margin-left: 20px;
+        margin-top: 70px;
+        margin-left: 7%;
       }
 
       img:hover {
@@ -526,9 +592,14 @@ body {
     top: 88%;
     left: 92%;
     position: fixed;
+    z-index: 400;
 
     a {
       text-decoration: none;
+      color: $login-mess;
+    }
+
+    a:hover {
       color: $login-mess;
     }
 
@@ -554,6 +625,7 @@ body {
 
     .frame-hapo {
       p {
+        margin-top: 5px;
         margin-left: 60px;
         font-weight: 600;
         font-family: san;
@@ -567,6 +639,7 @@ body {
         float: right;
         padding: 8px;
         margin-right: 10px;
+        margin-top: 5px;
       }
 
       img:hover {
@@ -577,8 +650,10 @@ body {
 
     .hello {
       margin-top: -20px;
+
       img {
-        margin-left: 5px;
+        margin-left: 11px;
+        margin-top: 10px;
       }
 
       p {
@@ -590,7 +665,6 @@ body {
         width: 256px;
         height: 53px;
         padding: 10px;
-        font-weight: 600;
         font-family: san;
         color: $footer-bg;
       }
@@ -611,9 +685,9 @@ body {
       span {
         font-size: 12px;
         color: $color-button;
-        font-family: san;
+        font-weight: 400;
         letter-spacing: 1px;
-        font-weight: 600;
+        line-height: 20px;
       }
     }
 
@@ -630,7 +704,7 @@ body {
     }
 
     .chat-hapo:hover {
-      color: $footer-end;
+      color: $login-mess;
     }
   }
 
@@ -640,7 +714,7 @@ body {
 
   .frame-loginn {
     position: fixed;
-    margin-top: -150px;
+    margin-top: -130px;
     margin-left: 40px;
   }
 
@@ -657,9 +731,18 @@ body {
       border-radius: 100%;
       border: none;
       padding: 0px;
-      margin-left: 94%;
-      margin-top: -10px;
+      margin-left: 95%;
+      margin-top: -17px;
       position: absolute;
+      width: 40px;
+    }
+    .rememberme {
+      margin-left: 10px;
+      font-size: 18px !important;
+      font-weight: normal;
+    }
+    .rememberme:hover {
+      cursor: pointer;
     }
 
     ul {
@@ -694,9 +777,12 @@ body {
     }
 
     .img-fb {
-      width: 12px;
+      width: 15px;
+      margin-top: -2px;
     }
-
+    .img-gg {
+      margin-top: -4px;
+    }
     .register {
       p {
         padding: 20px;
@@ -709,7 +795,7 @@ body {
     .tabs-container {
       width: 90%;
 
-      span {
+      label {
         font-size: 20px;
         font-family: utm;
         font-style: bold;
@@ -717,12 +803,17 @@ body {
         font-weight: 700;
       }
 
-      .check-box {
-        height: 20px;
-        width: 20px;
-        background-color: $color-blue;
+      .form-check-input {
+        height: 23px;
+        width: 23px;
         float: left;
         margin-top: 5px;
+      }
+
+      .form-check-input:checked {
+        background-color: $color-blue;
+        padding: 0px;
+        border: none;
       }
 
       .check-box:hover {
@@ -744,18 +835,21 @@ body {
         margin: auto;
       }
 
-      .rememberme a {
+      .form-check-label a {
         text-decoration: none;
         color: $footer-bg;
+        cursor: pointer;
       }
 
-      .rememberme a:hover {
+      .form-check-label a:hover {
         color: $message;
       }
 
       .forgot {
-        float: right;
+        margin-left: 70px;
         color: $color-blue;
+        font-size: 18px;
+        font-weight: normal;
       }
 
       .forgot:hover {
@@ -841,6 +935,10 @@ body {
       border: none;
     }
 
+    button {
+      margin-left: -25px;
+    }
+
     .navbar-toggler-icon {
       width: 25px;
     }
@@ -874,6 +972,7 @@ body {
   }
 
   .banner {
+    margin-top: 12px;
     background-size: 100% 350px;
     .info-banner {
       padding: 50px;
@@ -895,7 +994,7 @@ body {
       }
 
       p:nth-child(3) {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: -15px;
       }
 
@@ -904,6 +1003,7 @@ body {
         width: 190px;
         padding: 2px 4px 2px 4px;
         margin-bottom: 120px;
+        padding-bottom: 5px;
       }
     }
   }
@@ -924,9 +1024,32 @@ body {
         margin-bottom: 40px;
       }
     }
-
-    .card-hapo img {
-      height: 130px;
+    .text-title {
+      height: 80px;
+    }
+    .text-title-frist {
+      height: 80px;
+    }
+    .container-card {
+      width: 90%;
+    }
+    .card-hapo {
+      .card-body {
+        width: 225px;
+        p:nth-child(1) {
+          font-size: 20px;
+          height: 27px;
+        }
+      }
+      img {
+        height: 130px;
+      }
+      a {
+        width: 125px;
+        height: 24px;
+        font-size: 10px;
+        padding: 5px;
+      }
     }
 
     p {
@@ -943,6 +1066,8 @@ body {
 
     .view-courses p {
       font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 90px;
     }
 
     .view-courses p:hover {
@@ -980,17 +1105,17 @@ body {
     }
 
     .laptop-phone {
-      margin-top: 110px;
+      margin-top: 80px;
     }
     .laptop-phone img {
-      width: 350px;
+      width: 360px;
       margin-top: 125px;
     }
 
     p {
       font-size: 50px;
       display: block;
-      margin: -120px 0px 0px 270px;
+      margin: -120px 0px 0px 220px;
       position: absolute;
     }
 
@@ -1010,7 +1135,7 @@ body {
   }
 
   .feedback {
-    margin-top: 50px;
+    margin-top: 40px;
 
     .feedback-title {
       font-size: 50px;
@@ -1019,7 +1144,6 @@ body {
 
     .feedback-info {
       font-size: 18px;
-      margin-top: 20px;
       width: 67%;
     }
   }
@@ -1028,15 +1152,16 @@ body {
     margin-top: 20px;
 
     img {
-      margin-left: 30px;
+      margin-left: -5px;
     }
 
     .user-info {
-      margin-left: 20px;
+      margin-left: 0px;
     }
   }
 
   .become-member {
+    margin-top: -10px;
     background-size: 100% 270px;
 
     .info-become {
@@ -1049,18 +1174,21 @@ body {
       button {
         font-size: 20px;
         width: 250px;
-        padding: 10px;
+        padding: 5px;
+        padding-bottom: 8px;
       }
     }
   }
 
   .statistic {
+    margin-top: 10px;
     .statis {
       font-size: 50px;
       width: 180px;
     }
 
     .div-statistic {
+      margin-top: -0px;
       width: 97%;
       .card-statistic {
         p:nth-child(1) {
@@ -1075,8 +1203,12 @@ body {
   }
 
   .footer {
+    margin-top: 30px;
+    padding: 7px;
+
     .footer-image {
       width: 35%;
+      margin-top: 8px;
 
       img {
         width: 170px;
@@ -1093,6 +1225,7 @@ body {
 
     .home {
       width: 10%;
+      margin-top: 20px;
 
       p {
         font-size: 18px;
@@ -1100,6 +1233,7 @@ body {
     }
 
     .contact {
+      margin-top: 20px;
       width: 25%;
 
       p {
@@ -1112,7 +1246,7 @@ body {
 
       .icon-footer {
         width: 200px;
-        margin-left: -40px;
+        margin-left: -10px;
       }
 
       img {
@@ -1151,10 +1285,23 @@ body {
       .active {
         color: $color-blue !important;
         background-color: $color-button;
+
+        li {
+          text-align: center;
+          margin: auto;
+        }
       }
 
       .navbar-nav {
         height: 750px;
+        .nav-link {
+          text-align: center;
+          margin-left: 60px;
+          font-family: san;
+          font-size: 16px;
+          margin-top: 15px;
+          width: 150px;
+        }
       }
 
       .active:hover {
@@ -1175,9 +1322,10 @@ body {
       top: -5px;
       left: 25%;
       width: 150px;
+      text-align: center;
 
       .img-logo img {
-        width: 220px;
+        width: 200px;
       }
     }
 
@@ -1195,14 +1343,22 @@ body {
       margin-left: 25px;
 
       p:nth-child(1) {
-        font-size: 25px;
-        margin-top: 150px;
+        font-size: 24px;
+        margin-top: 180px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+
+      p:nth-child(2) {
+        margin-top: -30px;
+        font-size: 24px;
       }
 
       button {
-        width: 260px;
-        padding: 5px;
+        width: 268px;
+        padding: 10px;
         margin-bottom: 30px;
+        font-size: 18px;
       }
     }
   }
@@ -1210,12 +1366,34 @@ body {
   .tutorial-hapo {
     margin-top: -100px;
     .card-hapo {
-      width: 300px;
+      width: 280px;
       margin-bottom: 35px;
+
+      .card-body {
+        width: 280px;
+      }
 
       img {
         height: 165px;
+        width: 280px;
+        margin: 0px;
+        padding: 0px;
       }
+
+      a {
+        width: 200px;
+        height: 42px;
+        font-size: 18px;
+        padding: 5px;
+      }
+    }
+
+    .text-title {
+      height: 100px;
+    }
+
+    .text-title-frist {
+      height: 70px;
     }
 
     .other-courses {
@@ -1223,14 +1401,15 @@ body {
 
       .courses {
         font-size: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         width: 61%;
       }
     }
 
     .view-courses p {
       margin-top: 5px;
-      font-size: 22px;
+      font-size: 25px;
+      margin-bottom: 70px;
 
       .arrow {
         width: 31px;
@@ -1247,9 +1426,14 @@ body {
     }
     .list-whyhapo {
       margin-top: 40px;
-      margin-left: 15px;
+      margin-left: 3px;
       width: 390px;
       height: 400px;
+
+      span {
+        line-height: 25px;
+        letter-spacing: 0.5px;
+      }
     }
 
     .laptop img {
@@ -1264,7 +1448,7 @@ body {
     .laptop-phone img {
       width: 316px;
       margin-left: -200px;
-      margin-top: 330px;
+      margin-top: 370px;
     }
   }
 
@@ -1309,6 +1493,7 @@ body {
     .feedback-info {
       font-size: 14px;
       width: 280px;
+      margin-bottom: 10px;
     }
   }
 
@@ -1320,11 +1505,17 @@ body {
       padding: 5px;
       height: 135px;
       font-size: 14px;
+      margin-left: 8px;
     }
 
     .feelback-border {
       padding: 5px;
       margin-top: 7px;
+      margin-left: 12px;
+    }
+
+    .triangle {
+      margin-top: 12px;
     }
 
     .user {
@@ -1332,12 +1523,14 @@ body {
       margin-left: -20px;
 
       img {
-        width: 65px;
+        margin-left: 60px;
+        margin-top: -10px;
       }
     }
 
     .user-info {
-      margin-left: 20px;
+      margin-left: 60px;
+      margin-top: -10px;
 
       .name-user {
         font-size: 16px;
@@ -1357,10 +1550,16 @@ body {
 
   .prev {
     top: 70px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
   }
 
   .next {
     top: 70px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
   }
 
   .become-member {
@@ -1387,6 +1586,7 @@ body {
     }
 
     .div-statistic {
+      margin-top: -2px;
       width: 87%;
 
       .card-statistic {
@@ -1399,16 +1599,17 @@ body {
   .footer {
     .footer-image {
       width: 65%;
+      padding-bottom: 40px;
 
       img {
         width: 170px;
-        margin-left: -20px;
+        margin-left: 5px;
         margin-top: 20px;
       }
 
       p {
         font-size: 14px;
-        margin-left: -12px;
+        margin-left: 8px;
       }
     }
 
@@ -1417,7 +1618,7 @@ body {
 
       p {
         font-size: 17px;
-        margin-left: -10px;
+        margin-left: 15px;
       }
     }
 
@@ -1435,7 +1636,8 @@ body {
 
       .icon-footer {
         width: 130px;
-        margin-left: -3px;
+        margin-left: -24px;
+        margin-top: 9px;
       }
 
       img {
@@ -1465,12 +1667,33 @@ body {
   .login-register {
     padding: 0px;
     margin: 0px;
-    width: 378px;
-    height: 630px;
+    width: 382px;
+    height: 600px;
   }
 
   .line-login {
     width: 381px !important;
     margin-left: -30px !important;
+  }
+
+  .tabs .tabs-container input {
+    height: 40px;
+  }
+  .tabs .tabs-container label {
+    font-size: 18px;
+
+    .forgot {
+      margin-left: 24px;
+    }
+  }
+  .tabs .tabs-container .login-hapo {
+    height: 35px;
+    padding: 0px;
+  }
+  .tabs .tabs-container .facebook {
+    height: 45px;
+  }
+  .tabs .tabs-container .google {
+    height: 45px;
   }
 }
